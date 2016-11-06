@@ -1,0 +1,742 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: your.email@your.domain.com"
+      },
+      {
+        "line": 2,
+        "value": "#Keywords Summary :"
+      },
+      {
+        "line": 3,
+        "value": "#Feature: List of scenarios."
+      },
+      {
+        "line": 4,
+        "value": "#Scenario: Business rule through list of steps with arguments."
+      },
+      {
+        "line": 5,
+        "value": "#Given: Some precondition step"
+      },
+      {
+        "line": 6,
+        "value": "#When: Some key actions"
+      },
+      {
+        "line": 7,
+        "value": "#Then: To observe outcomes or validation"
+      },
+      {
+        "line": 8,
+        "value": "#And,But: To enumerate more Given,When,Then steps"
+      },
+      {
+        "line": 9,
+        "value": "#Scenario Outline: List of steps for data-driven as an Examples and \u003cplaceholder\u003e"
+      },
+      {
+        "line": 10,
+        "value": "#Examples: Container for s table"
+      },
+      {
+        "line": 11,
+        "value": "#Background: List of steps run before each of the scenarios"
+      },
+      {
+        "line": 12,
+        "value": "#\"\"\" (Doc Strings)"
+      },
+      {
+        "line": 13,
+        "value": "#| (Data Tables)"
+      },
+      {
+        "line": 14,
+        "value": "#@ (Tags/Labels):To group Scenarios"
+      },
+      {
+        "line": 15,
+        "value": "#\u003c\u003e (placeholder)"
+      },
+      {
+        "line": 16,
+        "value": "#\"\""
+      },
+      {
+        "line": 17,
+        "value": "## (Comments)"
+      },
+      {
+        "line": 18,
+        "value": "#Sample Feature Definition Template"
+      }
+    ],
+    "line": 20,
+    "elements": [
+      {
+        "line": 23,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 123143198,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I have Calculator instance",
+            "match": {
+              "location": "CalculationTests.i_have_Calculator_instance()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 34,
+        "name": "Addition tests",
+        "description": "",
+        "id": "addition-feature;addition-tests;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2477890,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I pass 0 and pass 5 into addition method",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 7
+                },
+                {
+                  "val": "5",
+                  "offset": 18
+                }
+              ],
+              "location": "CalculationTests.i_pass_and_pass_into_addition_method(int,int)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2091613,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I should get 5 for Additions",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 13
+                }
+              ],
+              "location": "CalculationTests.i_should_get_for_Additions(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 104142,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I calculator instance will not be null",
+            "match": {
+              "location": "CalculationTests.i_calculator_instance_will_not_be_null()"
+            },
+            "keyword": "But "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@functional_tests"
+          },
+          {
+            "line": 26,
+            "name": "@addition_happy_path"
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 123086,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I have Calculator instance",
+            "match": {
+              "location": "CalculationTests.i_have_Calculator_instance()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 35,
+        "name": "Addition tests",
+        "description": "",
+        "id": "addition-feature;addition-tests;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 138459,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I pass 2 and pass 5 into addition method",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 7
+                },
+                {
+                  "val": "5",
+                  "offset": 18
+                }
+              ],
+              "location": "CalculationTests.i_pass_and_pass_into_addition_method(int,int)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 118495,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I should get 7 for Additions",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7",
+                  "offset": 13
+                }
+              ],
+              "location": "CalculationTests.i_should_get_for_Additions(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 43679,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I calculator instance will not be null",
+            "match": {
+              "location": "CalculationTests.i_calculator_instance_will_not_be_null()"
+            },
+            "keyword": "But "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@functional_tests"
+          },
+          {
+            "line": 26,
+            "name": "@addition_happy_path"
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 120819,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I have Calculator instance",
+            "match": {
+              "location": "CalculationTests.i_have_Calculator_instance()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 36,
+        "name": "Addition tests",
+        "description": "",
+        "id": "addition-feature;addition-tests;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 161370,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I pass 7 and pass 7 into addition method",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7",
+                  "offset": 7
+                },
+                {
+                  "val": "7",
+                  "offset": 18
+                }
+              ],
+              "location": "CalculationTests.i_pass_and_pass_into_addition_method(int,int)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 112307,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I should get 14 for Additions",
+            "match": {
+              "arguments": [
+                {
+                  "val": "14",
+                  "offset": 13
+                }
+              ],
+              "location": "CalculationTests.i_should_get_for_Additions(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 55899,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I calculator instance will not be null",
+            "match": {
+              "location": "CalculationTests.i_calculator_instance_will_not_be_null()"
+            },
+            "keyword": "But "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@functional_tests"
+          },
+          {
+            "line": 26,
+            "name": "@addition_happy_path"
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 166414,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I have Calculator instance",
+            "match": {
+              "location": "CalculationTests.i_have_Calculator_instance()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 45,
+        "name": "Substraction tests",
+        "description": "",
+        "id": "addition-feature;substraction-tests;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 332599,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I pass 50 and pass 5 into substraction method",
+            "match": {
+              "arguments": [
+                {
+                  "val": "50",
+                  "offset": 7
+                },
+                {
+                  "val": "5",
+                  "offset": 19
+                }
+              ],
+              "location": "CalculationTests.i_pass_and_pass_into_substraction_method(int,int)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 144832,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I should get 45 for Subtractions",
+            "match": {
+              "arguments": [
+                {
+                  "val": "45",
+                  "offset": 13
+                }
+              ],
+              "location": "CalculationTests.i_should_get_for_Subtractions(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 38,
+            "name": "@substraction_happy_path"
+          },
+          {
+            "line": 19,
+            "name": "@functional_tests"
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 113744,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I have Calculator instance",
+            "match": {
+              "location": "CalculationTests.i_have_Calculator_instance()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 46,
+        "name": "Substraction tests",
+        "description": "",
+        "id": "addition-feature;substraction-tests;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 625531,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I pass 12 and pass 5 into substraction method",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12",
+                  "offset": 7
+                },
+                {
+                  "val": "5",
+                  "offset": 19
+                }
+              ],
+              "location": "CalculationTests.i_pass_and_pass_into_substraction_method(int,int)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 114782,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I should get 7 for Subtractions",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7",
+                  "offset": 13
+                }
+              ],
+              "location": "CalculationTests.i_should_get_for_Subtractions(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 38,
+            "name": "@substraction_happy_path"
+          },
+          {
+            "line": 19,
+            "name": "@functional_tests"
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 104303,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I have Calculator instance",
+            "match": {
+              "location": "CalculationTests.i_have_Calculator_instance()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 47,
+        "name": "Substraction tests",
+        "description": "",
+        "id": "addition-feature;substraction-tests;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 205644,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I pass 27 and pass 7 into substraction method",
+            "match": {
+              "arguments": [
+                {
+                  "val": "27",
+                  "offset": 7
+                },
+                {
+                  "val": "7",
+                  "offset": 19
+                }
+              ],
+              "location": "CalculationTests.i_pass_and_pass_into_substraction_method(int,int)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 112760,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I should get 20 for Subtractions",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20",
+                  "offset": 13
+                }
+              ],
+              "location": "CalculationTests.i_should_get_for_Subtractions(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 38,
+            "name": "@substraction_happy_path"
+          },
+          {
+            "line": 19,
+            "name": "@functional_tests"
+          }
+        ]
+      }
+    ],
+    "name": "Addition Feature",
+    "description": "I want to perform calculation of two numbers",
+    "id": "addition-feature",
+    "keyword": "Feature",
+    "uri": "Calculations.feature",
+    "tags": [
+      {
+        "line": 19,
+        "name": "@functional_tests"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Successful withdrawal from an account in credit",
+        "description": "",
+        "id": "cash-withdrawal-feature;successful-withdrawal-from-an-account-in-credit",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 415320,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I have deposited $100 in my account",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 18
+                }
+              ],
+              "location": "BankingSteps.i_have_deposited_$_in_my_account(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11061722,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat steps.BankingSteps.i_request_$(BankingSteps.java:24)\n\tat ✽.When I request $20(withDrawal.feature:8)\n",
+              "status": "pending"
+            },
+            "line": 8,
+            "name": "I request $20",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20",
+                  "offset": 11
+                }
+              ],
+              "location": "BankingSteps.i_request_$(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "$20 should be dispensed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "20",
+                  "offset": 1
+                }
+              ],
+              "location": "BankingSteps.$_should_be_dispensed(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@happy_path"
+          }
+        ]
+      }
+    ],
+    "name": "cash withdrawal feature",
+    "description": "I want to use this template for my feature file",
+    "id": "cash-withdrawal-feature",
+    "keyword": "Feature",
+    "uri": "withDrawal.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@functional_tests"
+      }
+    ]
+  }
+]

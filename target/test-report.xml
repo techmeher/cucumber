@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="7" time="0.142089">
+<testcase classname="Addition Feature" name="Addition tests" time="0.127817">
+<system-out><![CDATA[Given I have Calculator instance............................................passed
+When I pass 0 and pass 5 into addition method...............................passed
+Then I should get 5 for Additions...........................................passed
+But I calculator instance will not be null..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Addition Feature" name="Addition tests 2" time="0.000424">
+<system-out><![CDATA[Given I have Calculator instance............................................passed
+When I pass 2 and pass 5 into addition method...............................passed
+Then I should get 7 for Additions...........................................passed
+But I calculator instance will not be null..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Addition Feature" name="Addition tests 3" time="0.00045">
+<system-out><![CDATA[Given I have Calculator instance............................................passed
+When I pass 7 and pass 7 into addition method...............................passed
+Then I should get 14 for Additions..........................................passed
+But I calculator instance will not be null..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Addition Feature" name="Substraction tests" time="0.000644">
+<system-out><![CDATA[Given I have Calculator instance............................................passed
+When I pass 50 and pass 5 into substraction method..........................passed
+Then I should get 45 for Subtractions.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Addition Feature" name="Substraction tests 2" time="0.000854">
+<system-out><![CDATA[Given I have Calculator instance............................................passed
+When I pass 12 and pass 5 into substraction method..........................passed
+Then I should get 7 for Subtractions........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Addition Feature" name="Substraction tests 3" time="0.000423">
+<system-out><![CDATA[Given I have Calculator instance............................................passed
+When I pass 27 and pass 7 into substraction method..........................passed
+Then I should get 20 for Subtractions.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="cash withdrawal feature" name="Successful withdrawal from an account in credit" time="0.011477">
+<skipped><![CDATA[Given I have deposited $100 in my account...................................passed
+When I request $20..........................................................pending
+Then $20 should be dispensed................................................skipped
+]]></skipped>
+</testcase>
+</testsuite>
